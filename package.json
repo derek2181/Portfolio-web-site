@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "node-sass": "^7.0.3",
+    "sass": "^1.56.0",
+    "sass-watch": "^0.1.0"
+  },
+  "name": "template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"sass --watch scss/_variables.scss css/bootstrap.min.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
