@@ -28,5 +28,36 @@ a.link-hover {
     transform-origin: left;
     transform: scaleX(1);
   }
+button.nav-link.active.projects-tab{
+  color: aqua !important;
+}
 
- 
+button.nav-link.projects-tab{
+  color:white
+}
+
+button.nav-link.projects-tab:hover{
+  color:aqua !important
+}
+
+.logo-element img {
+  background-size: cover;
+  height: 1rem;
+  background-repeat: no-repeat;
+}
+a.project-link{
+  text-decoration: none;
+  transition: all 250ms ease-in-out;
+}
+a.project-link:hover{
+  text-decoration: underline;
+  color: white;
+  transform: scale(1.025);
+}
+.social-media{
+  transition: all 150ms ease-in-out;
+}
+.social-media:hover{
+  cursor:pointer;
+  transform: scale(1.15);
+}
