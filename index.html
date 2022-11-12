@@ -33,114 +33,61 @@
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/waves.css">
+    <link rel="stylesheet" href="./css/carousel.buttons.css">
+    <link rel="stylesheet" href="./css/widthme.css">
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="py-3 bg-primary sticky-top">
-      <div class="d-flex justify-content-between mx-5">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <h4>
-              <a
-                href="#"
-                class="nav-link text-white d-flex align-items-center"
-                aria-current="page"
-                ><img
-                  src="./images/ytIcon.png"
-                  class="me-1"
-                  height="35px"
-                  width="35px"
-                  style="border-radius: 100%"
-                  alt=""
-                />
-                Derek</a
-              >
+    <header class="sticky-top " style="background-color:rgb(36, 34, 34) ;">
+      <nav class="navbar-expand-lg py-4 ">
+        <div class="mx-5 d-block d-lg-flex">
+          <div class="d-flex align-items-center d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+            <img src="./images/yticon.jpg" style="border-radius:100% ;" alt="" width="50" height="50" class="d-inline-block align-text-top me-2">
+            <h4 class="text-white mb-0">
+              Derek
             </h4>
-          </li>
-        </ul>
-        <ul class="nav nav-pills d-flex align-items-center">
-          <li class="nav-item">
-            <a
-              href="#"
-              class="nav-link link-hover link-active text-white"
-              aria-current="page"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link link-hover text-white">Projects</a>
-          </li>
+          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa-solid fa-bars text-white fs-1"></i>
+            </button>
+          </div>
+        
+          <div class=" collapse navbar-collapse justify-content-end "  id="navbarSupportedContent">
+           
+          
+            <ul class="navbar-nav mt-4 mt-lg-0  mb-2 mb-lg-0 ">
+              
+              <li class="nav-item me-4">
+                <a class="nav-link active text-white link-hover fs-5" aria-current="page" href="#">Projects</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link text-white link-hover fs-5" href="#" text-white>Skills</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link text-white link-hover fs-5" href="#" text-white>About me</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link text-white link-hover fs-5" href="#" text-white>Contact</a>
+              </li>
+            </ul>
 
-          <li class="nav-item">
-            <a href="#" class="nav-link link-hover text-white">Skills</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link link-hover text-white">Contact</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link link-hover text-white">About me</a>
-          </li>
-        </ul>
-      </div>
+        
+          </div>
+        </div>
+      </nav>
     </header>
-    <main>
-      <section id="hero-section" class="gray-background py-4 position-relative">
-        <svg
-          id="wave"
-          style="
-            transform: rotate(0deg);
-            transition: 0.3s;
-            position: absolute;
-            bottom: 0;
-          "
-          viewBox="0 0 1440 250"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-              <stop
-                stop-color="rgba(230.954, 230.954, 230.954, 1)"
-                offset="0%"
-              ></stop>
-              <stop
-                stop-color="rgba(230.588, 230.174, 230.26, 1)"
-                offset="100%"
-              ></stop>
-            </linearGradient>
-          </defs>
-          <path
-            style="transform: translate(0, 0px); opacity: 1"
-            fill="url(#sw-gradient-0)"
-            d="M0,150L40,125C80,100,160,50,240,54.2C320,58,400,117,480,129.2C560,142,640,108,720,116.7C800,125,880,175,960,187.5C1040,200,1120,175,1200,150C1280,125,1360,100,1440,79.2C1520,58,1600,42,1680,58.3C1760,75,1840,125,1920,129.2C2000,133,2080,92,2160,62.5C2240,33,2320,17,2400,29.2C2480,42,2560,83,2640,100C2720,117,2800,108,2880,112.5C2960,117,3040,133,3120,125C3200,117,3280,83,3360,62.5C3440,42,3520,33,3600,33.3C3680,33,3760,42,3840,58.3C3920,75,4000,100,4080,100C4160,100,4240,75,4320,54.2C4400,33,4480,17,4560,8.3C4640,0,4720,0,4800,37.5C4880,75,4960,150,5040,170.8C5120,192,5200,158,5280,150C5360,142,5440,158,5520,170.8C5600,183,5680,192,5720,195.8L5760,200L5760,250L5720,250C5680,250,5600,250,5520,250C5440,250,5360,250,5280,250C5200,250,5120,250,5040,250C4960,250,4880,250,4800,250C4720,250,4640,250,4560,250C4480,250,4400,250,4320,250C4240,250,4160,250,4080,250C4000,250,3920,250,3840,250C3760,250,3680,250,3600,250C3520,250,3440,250,3360,250C3280,250,3200,250,3120,250C3040,250,2960,250,2880,250C2800,250,2720,250,2640,250C2560,250,2480,250,2400,250C2320,250,2240,250,2160,250C2080,250,2000,250,1920,250C1840,250,1760,250,1680,250C1600,250,1520,250,1440,250C1360,250,1280,250,1200,250C1120,250,1040,250,960,250C880,250,800,250,720,250C640,250,560,250,480,250C400,250,320,250,240,250C160,250,80,250,40,250L0,250Z"
-          ></path>
-          <defs>
-            <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
-              <stop
-                stop-color="rgba(214.338, 210.159, 208.817, 1)"
-                offset="0%"
-              ></stop>
-              <stop
-                stop-color="rgba(175.633, 175.633, 175.633, 1)"
-                offset="100%"
-              ></stop>
-            </linearGradient>
-          </defs>
-          <path
-            style="transform: translate(0, 50px); opacity: 0.9"
-            fill="url(#sw-gradient-1)"
-            d="M0,200L40,183.3C80,167,160,133,240,129.2C320,125,400,150,480,162.5C560,175,640,175,720,154.2C800,133,880,92,960,75C1040,58,1120,67,1200,83.3C1280,100,1360,125,1440,133.3C1520,142,1600,133,1680,137.5C1760,142,1840,158,1920,170.8C2000,183,2080,192,2160,175C2240,158,2320,117,2400,104.2C2480,92,2560,108,2640,129.2C2720,150,2800,175,2880,187.5C2960,200,3040,200,3120,195.8C3200,192,3280,183,3360,154.2C3440,125,3520,75,3600,62.5C3680,50,3760,75,3840,83.3C3920,92,4000,83,4080,87.5C4160,92,4240,108,4320,95.8C4400,83,4480,42,4560,29.2C4640,17,4720,33,4800,41.7C4880,50,4960,50,5040,58.3C5120,67,5200,83,5280,100C5360,117,5440,133,5520,145.8C5600,158,5680,167,5720,170.8L5760,175L5760,250L5720,250C5680,250,5600,250,5520,250C5440,250,5360,250,5280,250C5200,250,5120,250,5040,250C4960,250,4880,250,4800,250C4720,250,4640,250,4560,250C4480,250,4400,250,4320,250C4240,250,4160,250,4080,250C4000,250,3920,250,3840,250C3760,250,3680,250,3600,250C3520,250,3440,250,3360,250C3280,250,3200,250,3120,250C3040,250,2960,250,2880,250C2800,250,2720,250,2640,250C2560,250,2480,250,2400,250C2320,250,2240,250,2160,250C2080,250,2000,250,1920,250C1840,250,1760,250,1680,250C1600,250,1520,250,1440,250C1360,250,1280,250,1200,250C1120,250,1040,250,960,250C880,250,800,250,720,250C640,250,560,250,480,250C400,250,320,250,240,250C160,250,80,250,40,250L0,250Z"
-          ></path>
-        </svg>
+    <main >
+      <section id="hero-section"  class="hero-background pt-4 position-relative mb-0" style="height: 600px; overflow-y: hidden;" >
+        
         <div
           class="d-flex row justify-content-lg-evenly justify-content-xs-center align-items-center mx-3"
         >
           <div
-            class="col-xs-12 col-lg-6 d-flex align-items-center justify-content-center"
+            class="col-xs-12 col-lg-6 d-flex align-items-center justify-content-center" style="height: 600px"
           >
-            <div class="d-xs-flex align-items-xs-center d-lg-block">
+            <div class="d-flex flex-column justify-content-center align-items-xs-center d-lg-block pb-5">
               <p class="mb-0 text-center" style="font-size: 1.2rem">Hi,</p>
               <h2 class="fw-bold display-1 text-center" style="font-size: 3rem">
                 I'm Derek, <br />
@@ -150,7 +97,7 @@
               <p class="fw-light text-center" style="font-size: 1rem">
                 Passionate programmer always learning new things
               </p>
-              <button class="btn btn-outline-primary d-flex mx-auto">
+              <button class="btn btn-outline-primary d-flex mx-auto " style="z-index: 5;">
                 Download CV
               </button>
             </div>
@@ -158,14 +105,14 @@
           <div class="d-none d-lg-flex col-lg-6 d-flex justify-content-center">
             <img
               src="./images/Happy-Man-Transparent-Background.png"
-              height="700px"
+              height="600px"
               alt=""
             />
           </div>
         </div>
       </section>
 
-      <section style="background: rgb(9, 8, 8);position: relative; ">
+      <section id="projects" style="background: rgb(9, 8, 8);position: relative; ">
         <h1 class="text-white text-center py-4 display-4">Projects</h1>
 
         <ul
@@ -230,7 +177,7 @@
             <div class="row d-flex">
               <div class="col-12">
                 <div class="owl-carousel projects-web owl-theme shadow-lg">
-                  <div class="item py-5" style="height: 800px;background: #3ab6a1">
+                  <div class="item py-5" style="min-height: 800px; background: #3ab6a1">
                     <div class="py-5">
                       <div
                         class="d-flex justify-content-center align-items-center"
@@ -260,19 +207,28 @@
                       </div>
                     </div>
 
-                    <div class="d-flex justify-content-evenly mb-2">
+                    <div class="d-flex justify-content-xxl-evenly justify-content-center  mb-2">
+                      <div class="col-xxl-4 col-10">
+
+                   
                       <img
                         src="./images/BookView/BookviewLanding.png"
-                        class="shadow-lg"
-                        style="width: 25%"
+                        class=" w-100
+                        shadow-lg "
+                        
                         alt=""
                       />
+                    </div>
+                      <div class="col-4  d-none d-xxl-block">
+
+                     
                       <img
                         src="./images/BookView/BookviewLogin.png"
-                        class="shadow-lg"
-                        style="width: 25%"
+                        class=" w-100 shadow-lg "
+                        
                         alt=""
                       />
+                    </div>
                     </div>
                     <h4
                       class="text-center text-white"
@@ -288,17 +244,19 @@
                       spoiler
                     </p>
                   </div>
-                  <div class="item py-5" style="height: 800px;background: #5f1107">
+                  <div class="item py-5" style="min-height: 800px;background: #5f1107">
                     <div class="py-5">
                       <div
                         class="d-flex justify-content-center align-items-center"
                       >
+                    
                         <img
                           src="./images/Nikkei/NikkeiLogo.png"
                           class="mb-2"
                           style="width: 350px"
                           alt=""
                         />
+                
                       </div>
                       <p class="text-white my-1 text-center">
                         Sushi restaurant web application made with C#!
@@ -318,18 +276,22 @@
                     </div>
 
                     <div class="d-flex justify-content-evenly mb-2">
+                      <div class="col-xxl-4 col-10">
                       <img
                         src="./images/Nikkei/NikkeiMenu.png"
-                        class="shadow-lg"
-                        style="width: 700px"
+                        class="shadow-lg  w-100"
+                     
                         alt=""
                       />
+                    </div>
+                    <div class="col-4  d-none d-xxl-block">
                       <img
                         src="./images/Nikkei/NikkeiReview.png"
-                        class="shadow-lg"
-                        style="width: 700px"
+                        class="shadow-lg  w-100"
+              
                         alt=""
                       />
+                    </div>
                     </div>
                     <h4
                       class="text-center text-white"
@@ -344,7 +306,7 @@
                       by price
                     </p>
                   </div>
-                  <div class="item py-5" style=" height: 800px;background: #3643b6">
+                  <div class="item py-5" style="min-height: 800px;background: #3643b6">
                     <div class="py-5">
                       <div
                         class="d-flex justify-content-center align-items-center"
@@ -380,18 +342,23 @@
                     </div>
 
                     <div class="d-flex justify-content-evenly mb-2">
+
+                      <div class="col-xxl-4 col-10">
                       <img
                         src="./images/Elearning/E-learningLanding.png"
-                        class="shadow-lg"
-                        style="width: 700px"
+                        class="shadow-lg w-100"
+                    
                         alt=""
                       />
+                    </div>
+                    <div class="col-4  d-none d-xxl-block">
                       <img
                         src="./images/Elearning/E-learningLogin.png"
-                        class="shadow-lg"
-                        style="width: 700px"
+                        class="shadow-lg w-100"
+                   
                         alt=""
                       />
+                    </div>
                     </div>
                     <h4
                       class="text-center text-white"
@@ -409,11 +376,12 @@
                     </p>
                   </div>
 
-                  <div class="item py-5" style="height: 800px;background: #1c97b1">
+                  <div class="item py-5" style="min-height: 800px;background: #1c97b1">
                     <div class="py-5">
                       <div
                         class="d-flex justify-content-center align-items-center"
                       >
+                      
                         <img
                           src="./images/Questionary/Logo.png"
                           class="me-2"
@@ -445,18 +413,22 @@
                     </div>
 
                     <div class="d-flex justify-content-evenly mb-2">
+                      <div class="col-xxl-4 col-10">
                       <img
                         src="./images/Questionary/QuestionaryLanding.png"
-                        class="shadow-lg"
-                        style="width: 700px"
+                        class="shadow-lg  w-100"
+                    
                         alt=""
                       />
+                    </div>
+                    <div class="col-4  d-none d-xxl-block">
                       <img
                         src="./images/Questionary/QuestionaryLogin.png"
-                        class="shadow-lg"
-                        style="width: 700px"
+                        class="shadow-lg  w-100"
+                  
                         alt=""
                       />
+                    </div>
                     </div>
                     <h4
                       class="text-center text-white"
@@ -470,7 +442,7 @@
                       commnets and questions also they can mark a question as
                       favorite. Users can edit their profile and they can mark a
                       correct answer to their questions highlighting it from the
-                      others
+                      others. Users can edit their profile such as name, email, password and profile picture
                     </p>
                   </div>
                 </div>
@@ -618,7 +590,7 @@
       </section>
 
       
-      <section  style="max-height: 500px; overflow-x: hidden;" >
+      <section  id="skills"  style="max-height: 500px; overflow-x: hidden;" >
 
 
        <div class="col-12  " >
@@ -686,8 +658,8 @@
             </div>
             <div class="item"><h1 class="text-center display-3 text-white bg-info">Back-end skills</h1>
             
-              <div class="d-flex justify-content-center mt-4 ">
-                <div class="col-5 d-flex flex-column align-items-center" >
+              <div class="d-flex justify-content-between mt-4  ">
+                <div class="col-md-5 col-12 d-flex flex-column align-items-center " >
                   <h1 class=" fs-1">Languages</h1>
                   <div class="d-flex justify-content-center" >
 
@@ -702,7 +674,21 @@
                         <h5 class=" text-center">Kotlin</h5></span>
                   </div>
                 </div>
-              
+                <div class="col-md-5 d-none d-md-flex d-flex flex-column align-items-center" >
+                  <h1 class=" fs-1">Database</h1>
+                  <div class="d-flex justify-content-center" >
+
+                  <span class="me-2"><img src="./images/MySQLLogo.png" height="65px" width="65px" alt="">
+                    <h5 class=" text-center">MySQL</h5></span>
+                 
+                  <span class="me-2"  ><img src="./images/SqlServer.png" height="65px" width="65px" alt="">
+                    <h5 class=" text-center">SQL Server</h5></span>
+                    <span class="me-2" ><img src="./images/Firebase.png" height="65px" width="65px" alt="">
+                      <h5 class=" text-center">Firebase</h5></span>
+                      <span><img src="./images/MongoDB.png" height="65px" width="65px" alt="">
+                        <h5 class=" text-center">Mongo DB</h5></span>
+                  </div>
+                </div>
               </div>
               <div class="d-flex justify-content-between ">
               <div class="col-md-5 d-none d-md-flex d-flex flex-column align-items-center" >
@@ -743,7 +729,7 @@
       
     </section>
 
-     <section id="AboutMe" class="position-relative bg-primary pb-5  " style="padding-top:100px ; overflow-x: hidden;background-image: url('./images/wave.png');background-repeat: no-repeat;background-size: cover;">
+     <section id="AboutMe" class="position-relative bg-primary pb-5  " style="padding-top:100px ; overflow-x: hidden;background-image: url('./images/wave.png');background-repeat: no-repeat;background-size: contain;">
 
 <div style="z-index:0 ;">
 
@@ -751,37 +737,88 @@
 <h1 class="text-center display-4 pt-2 mb-5 text-white">About me</h1>
 
       <div class="d-flex justify-content-center">
-        <img src="./images/ytIcon.png" style="border-radius:100%; border: rgb(205, 205, 205) solid 2px ;" height="250px" width="250px" alt="">
+        <img src="./images/ytIcon.jpg" style="border-radius:100%; border: rgb(205, 205, 205) solid 2px ;" height="250px" width="250px" alt="">
       </div>
       <div class=" mb-5 d-flex flex-column align-items-center">
         <h1 class="text-center text-white">Derek Cortés</h1>
         <div class="d-flex">
-          <a href="https://github.com/derek2181/" class="me-2"> <i class="fa-brands fa-github text-white fs-2 social-media" style="color: orange;"></i></a>
-          <a href="https://www.youtube.com/channel/UC1RWGne_z6OZx8EYYNP_sAA" class=" me-2"> <i class="fa-brands fa-youtube social-media  fs-2" style="color: rgb(213, 53, 48);"></i></a>
-          <a href="https://www.linkedin.com/in/derek-jafet-cort%C3%A9s-madriz-11b0371a0/" class="text-center"> <i class="fa-brands fa-linkedin fs-2 social-media" style="color: rgb(248, 248, 248);"></i></a>
+          <a href="https://github.com/derek2181/" target="_blank" class="me-2"> <i class="fa-brands fa-github text-white fs-2 social-media" style="color: orange;"></i></a>
+          <a href="https://www.youtube.com/channel/UC1RWGne_z6OZx8EYYNP_sAA"  target="_blank" class=" me-2"> <i class="fa-brands fa-youtube social-media  fs-2" style="color: rgb(213, 53, 48);"></i></a>
+          <a href="https://www.linkedin.com/in/derek-jafet-cort%C3%A9s-madriz-11b0371a0/"  target="_blank" class="text-center"> <i class="fa-brands fa-linkedin fs-2 social-media" style="color: rgb(248, 248, 248);"></i></a>
        
         </div>
        
       </div>
-  
+      <div   class=" row d-flex justify-content-evenly mb-5">
+
+      
+        <div class="col-4 bg-white  d-flex flex-column justify-content-center shadow-lg p-3" style="border-radius: 10px;">
+          <h1 class="text-center">
+           Me and myself   
+          </h1>
+          <p class="mb-0 px-3" style="font-weight:450 ;">My name is Derek, I am 22 years old and I am originally from Monterrey, México. I am a perfectionist I like doing things correctly and in form. One of my main goals is to be an excellent programmer so I am always learning new things and perfection the ones that I already know </p>
+        </div>
+        <div class="col-4 bg-white  d-flex flex-column justify-content-center shadow-lg p-3" style="border-radius: 10px;">
+          <h1 class="text-center">
+            Why programming?
+          </h1>
+          <p class="mb-0 px-3" style="font-weight:450 ;">I used to be curious about how  mobile applications are made so I choosed my career based on that and videogames development. I ended up in this world and I am very happy with what I do</p>
+        </div>
+      </div>
       <div   class=" row d-flex justify-content-evenly">
 
       
       <div class="col-4 bg-white  d-flex flex-column justify-content-center shadow-lg p-3" style="border-radius: 10px;">
         <h1 class="text-center">
-          Degree
+          Graduate Degree     
         </h1>
         <p class="mb-0 px-3" style="font-weight:450 ;">I am a programming student received in November 2022 with the degree of LMAD which is a career from the Universidad Autónoma de Nuevo León. During my career I learned many programming languages on the way and how to develop desktop, web and mobile applications. </p>
       </div>
       <div class="col-4 bg-white  d-flex flex-column justify-content-center shadow-lg p-3" style="border-radius: 10px;">
         <h1 class="text-center">
-          Hobbies
+          Hobbies 
         </h1>
-        <p class="mb-0 px-3" style="font-weight:450 ;">I like editing videos and upload them to my youtube channel, I realized it is also helpful for my CV so I enjoy it even more.I love playing videogames and make them in Unreal Engine, my dream is to publish a videogame on Steam. Besides this I like doing exercise and play soccer</p>
+        <p class="mb-0 px-3" style="font-weight:450 ;">I like editing videos and upload them to my youtube channel. I love playing videogames and make them in Unreal Engine, my dream is to publish a videogame on Steam. Besides this I like doing exercise and play soccer</p>
       </div>
     </div>
   </div>
+ 
      </section>
+
+     <section id="Contact me" class="pb-5"  style="background:#121212;overflow-y: hidden; " >
+      <svg width="100%" id="svg" viewBox="0 0 1440 350" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 82.40191387559807,198.8995215311005 164.80382775119614,197.79904306220098 254,198 C 343.19617224880386,198.20095693779902 439.18660287081343,199.70334928229664 528,183 C 616.8133971291866,166.29665071770336 698.4497607655501,131.38755980861242 816,131 C 933.5502392344499,130.61244019138758 1087.0143540669858,164.74641148325358 1197,182 C 1306.9856459330142,199.25358851674642 1373.492822966507,199.6267942583732 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#1a1a1a" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 200)"></path></svg>  
+      <h1 class="text-white text-center mb-0">Did you like my work and have something in mind? <br>
+      Send me over a message and let's <span  style="text-decoration: underline;"> 
+        talk
+      </span> !</h1>
+
+      <div style="margin:0 20% ;">
+
+    
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label text-white">Full name</label>
+        <input type="email" class="form-control rounded" id="exampleInputEmail1" aria-describedby="emailHelp">
+  
+      </div>
+      <div class="mb-3">
+        <label for="fullname" class="form-label text-white">Email</label>
+        <input type="text" class="form-control  rounded" id="fullname">
+      </div>
+      <div class="form-floating mb-3 ">
+        <p for="floatingTextarea mb-3" class="form-label text-white">Content</p>
+     
+        <textarea class="form-control rounded"  style="height:70px ;" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+
+      <button type="submit" class="btn btn-secondary" style="width:250px ;">Send</button>
+    </div>
+     </section>
+
+    </main>  
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

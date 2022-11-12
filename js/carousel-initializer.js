@@ -4,7 +4,7 @@ $(document).ready(function(){
     var thirdCarousel=$(".projects-mobile");
     firstCarousel.owlCarousel({
         loop:true,
-        autoplay:true,
+        autoplay:false,
         autoplaySpeed:2000,
         autoplayTimeout : 7400,
         infiniteLoop:true,
@@ -24,7 +24,7 @@ $(document).ready(function(){
             },
             1000:{
                 items:1,
-                nav:false,
+                nav:true,
                 loop:true
             }
         }
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
     secondCarousel.owlCarousel({
         loop:true,
-        autoplay:true,
+        autoplay:false,
        
         autoplaySpeed:1500,
         autoplayTimeout : 10000,
@@ -53,7 +53,7 @@ $(document).ready(function(){
             },
             1000:{
                 items:1,
-                nav:false,
+                nav:true,
                 loop:true,
                 dots:true
             }

@@ -1,5 +1,7 @@
-.gray-background{
-    background:#f1f1f2 ;
+.hero-background{
+   background-image:url(../images/wave2.png) ;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 a{
@@ -61,3 +63,9 @@ a.project-link:hover{
   cursor:pointer;
   transform: scale(1.15);
 }
+.navbar-expand-lg .navbar-collapse{
+  flex-basis: none !important;
+}
+
+
+
