@@ -35,7 +35,7 @@ $(document).ready(function(){
     secondCarousel.owlCarousel({
         loop:true,
         autoplay:false,
-       
+        autoHeight:true,
         autoplaySpeed:1500,
         autoplayTimeout : 10000,
         infiniteLoop:true,

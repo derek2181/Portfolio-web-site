@@ -13,10 +13,9 @@
   .owl-carousel {
     position: relative;
   }
-  .owl-theme .owl-dots{
+  .owl-dots{
     position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    left: 47%;
-    transform: translate(0,-50%);
+    bottom:10px;
+    left:25%;
+    right:25%;
   }
