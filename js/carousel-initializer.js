@@ -61,7 +61,7 @@ $(document).ready(function(){
     });
     thirdCarousel.owlCarousel({
         loop:true,
-        autoplay:true,
+        autoplay:false,
         autoHeight:true,
         autoplaySpeed:1500,
         autoplayTimeout : 10000,
