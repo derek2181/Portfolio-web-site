@@ -10,6 +10,7 @@ a{
 
 a.link-hover {
     position: relative;
+    cursor: pointer;
   }
   
   a.link-hover::before {
